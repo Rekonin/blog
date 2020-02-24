@@ -1,24 +1,164 @@
 <!DOCTYPE html>
 
-<html>
+<html dir="ltr" lang="en">
 
 <head>
 
-<title>M U S I C</title>
+<title>Website Name</title>
 
-<style type='text/css'>
-* { color: #131313;
-font: 40px/40px roboto;
+<link href="https://fonts.googleapis.com/css?family=Lora:400i|Noto+Serif:400i|Roboto|Vollkorn:400i|Reem+Kufi&display=swap" rel="stylesheet">
+
+<style type="text/css">
+body {
+  background: #131313;
+  cursor: default;
+  font-family: 'Reem Kufi', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+section._header {
+  padding: 0;
+}
+
+section._post {
+  padding: 80px 0;
+}
+
+section._footer {
+  padding: 40px 0;
+}
+
+div {
 margin: 0;
-padding: 0; }
-body { background-color: #f6f6f6; }
+padding: 0;
+}
 
-#site { background-color: #fff;
-letter-spacing: 20px;
-padding: 20px 40px;
-width: 100%; }
+h2 {
+color: #e5ac41;
+font: 38pt/38pt 'Vollkorn', serif;
+margin: 0 auto;
+width: 1080px;
+}
 
-.song { padding: 40px 0 0 40px; }
+p {
+color: #a3a3a3;
+font: 14pt/18pt 'Reem Kufi', sans-serif;
+margin: 40px auto;
+width: 1080px;
+}
+
+a:link, a:active, a:visited {
+  color: #e5ac41;
+  font: 14pt/18pt 'Reem Kufi', sans-serif;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+
+.parallax_1 {
+  background: url('1.png') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.parallax_2 {
+  background: url('2.png') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+.parallax_3 {
+  background: url('3.png') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+.parallax_4 {
+  background: url('4.png') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+
+.link {
+margin: 0 auto;
+text-align: right;
+width: 1080px;
+}
+
+
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background: #131313;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  letter-spacing: 2px;
+}
+nav ul li a, nav ul li a:link {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #e5ac41;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .4s;
+}
+nav ul li a:hover {
+  color: #262626;
+}
+
+nav.top_menu ul li a {
+  position: relative;
+  z-index: 1;
+}
+nav.top_menu ul li a:hover {
+  color: #e5ac41;
+}
+nav.top_menu ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  content: '.';
+  color: transparent;
+  background: #262626;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+nav.top_menu ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
 </style>
 
 </head>
@@ -27,13 +167,53 @@ width: 100%; }
 
 
 
-<div id="site">MUSIC</div>
+<section class="_header">
+  <nav class="top_menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Music</a></li>
+      <li><a href="#">Samples</a></li>
+      <li><a href="#">Instruments</a></li>
+	  <li><a href="#">Mixing</a></li>
+	  <li><a href="#">Mastering</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+</section>
 
-<div class="song"><iframe width="600px" height="160px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/494998881&color=%23808080&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>
+<div class="parallax_1"></div>
 
-<div class="song"><iframe width="600px" height="160px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/494998881&color=%23808080&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>
+<section class="_post">
+<h2>Section A</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit pellentesque habitant. Viverra accumsan in nisl nisi. Porttitor leo a diam sollicitudin tempor id. Eget sit amet tellus cras. Aliquet nibh praesent tristique magna sit amet purus gravida quis. Fermentum leo vel orci porta non. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Amet cursus sit amet dictum sit amet. Luctus accumsan tortor posuere ac ut consequat.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit pellentesque habitant. Viverra accumsan in nisl nisi. Porttitor leo a diam sollicitudin tempor id. Eget sit amet tellus cras. Aliquet nibh praesent tristique magna sit amet purus gravida quis. Fermentum leo vel orci porta non. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Amet cursus sit amet dictum sit amet. Luctus accumsan tortor posuere ac ut consequat.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit pellentesque habitant. Viverra accumsan in nisl nisi. Porttitor leo a diam sollicitudin tempor id. Eget sit amet tellus cras. Aliquet nibh praesent tristique magna sit amet purus gravida quis. Fermentum leo vel orci porta non. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Amet cursus sit amet dictum sit amet. Luctus accumsan tortor posuere ac ut consequat.
+<div class="link"><a href="#">Back to top</a></div></p>
+</section>
 
-<div class="song"><iframe width="600px" height="160px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/494998881&color=%23808080&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>
+<div class="parallax_2"></div>
+
+<section class="_post">
+<h2>Section B</h2>
+<p><iframe width="600px" height="160px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/494998881&color=%23808080&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+<div class="link"><a href="#">Back to top</a></div></p>
+</section>
+
+<div class="parallax_3"></div>
+
+<section class="_post">
+<h2>Section C</h2>
+<p>Volutpat est velit egestas dui id ornare arcu. Lacus sed turpis tincidunt id. Dictum fusce ut placerat orci. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. At urna condimentum mattis pellentesque id. Tempus egestas sed sed risus. Fringilla est ullamcorper eget nulla facilisi. Ipsum suspendisse ultrices gravida dictum fusce. Pellentesque habitant morbi tristique senectus et netus. Risus nec feugiat in fermentum posuere urna nec. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Adipiscing enim eu turpis egestas pretium aenean pharetra.
+<div class="link"><a href="#">Back to top</a></div></p>
+</section>
+
+<div class="parallax_4"></div>
+
+<section class="_footer">
+<h2>Thanks for visiting...</h2>
+<p>If you want to get in touch or follow what I'm doing --><br />
+</p>
+</section>
 
 
 
